@@ -1,0 +1,116 @@
+/* 设置宽高 */
+.setWidthHeight (@w, @h) {
+  width: @w;
+  height: @h;
+}
+
+/* fixed 定位 */
+.fixed-position (@p1, @p2, @v1, @v2) {
+  position: fixed;
+  @{p1}: @v1;
+  @{p2}: @v2;
+}
+
+/* relative 定位 */
+.relative-position (@p1, @p2, @v1, @v2) {
+  position: relative;
+  @{p1}: @v1;
+  @{p2}: @v2;
+}
+
+/* absolute 定位 */
+.absolute-position (@p1, @p2, @v1, @v2) {
+  position: absolute;
+  @{p1}: @v1;
+  @{p2}: @v2;
+}
+
+/* flex布局 */
+.display-flex (@p1, @p2, @v1, @v2) {
+  display: flex;
+  @{p1}: @v1;
+  @{p2}: @v2;
+}
+
+/* 超出几行显示省略号 */
+.overhidden (@p1) {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @p1;
+  overflow: hidden;
+}
+.bg-center {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.img-block {
+  display: block;
+}
+
+.common_FullItem {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  transform: translateX(100%);
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-item-center {
+  display: flex;
+  align-items: center;
+}
+.header-img {
+  display: block;
+  width: 25%;
+  height: 60rpx;
+  margin: 0 auto;
+  padding-top: 50rpx;
+}
+.header-title {
+  display: block;
+  font-size: 35rpx;
+  font-weight: bold;
+  margin: 0 auto;
+  color:black;
+  width: 100%;
+  padding-top: 10rpx;
+  text-align: center;
+  padding-top: 55rpx;
+}
